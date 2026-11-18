@@ -1,0 +1,97 @@
+{
+  "versions": [
+    {
+      "id": "web1",
+      "errors": [
+        "deadline",
+        "office"
+      ],
+      "clears": []
+    },
+    {
+      "id": "audio1",
+      "errors": [
+        "deadline"
+      ],
+      "clears": []
+    },
+    {
+      "id": "web2",
+      "errors": [],
+      "clears": [
+        "deadline",
+        "office"
+      ]
+    }
+  ],
+  "touches": [
+    {
+      "version": "web1",
+      "person": "R1",
+      "tick": 1,
+      "copies": 1
+    },
+    {
+      "version": "audio1",
+      "person": null,
+      "tick": 2,
+      "copies": 24
+    },
+    {
+      "version": "web2",
+      "person": "R1",
+      "tick": 3,
+      "copies": 1
+    },
+    {
+      "version": "audio1",
+      "person": "R1",
+      "tick": 7,
+      "copies": 1
+    },
+    {
+      "version": "web1",
+      "person": "R2",
+      "tick": 4,
+      "copies": 1
+    }
+  ],
+  "contacts": [
+    {
+      "person": "R1",
+      "channel": "sms",
+      "consent": true,
+      "available": true
+    },
+    {
+      "person": "R1",
+      "channel": "phone",
+      "consent": true,
+      "available": true
+    },
+    {
+      "person": "R2",
+      "channel": "phone",
+      "consent": false,
+      "available": true
+    }
+  ],
+  "notices": [
+    {
+      "key": "N1",
+      "person": "R1",
+      "errors": [
+        "deadline"
+      ],
+      "tick": 5,
+      "status": "failed"
+    }
+  ],
+  "policy": {
+    "capacity": 1,
+    "severity": {
+      "deadline": 2,
+      "office": 1
+    }
+  }
+}
